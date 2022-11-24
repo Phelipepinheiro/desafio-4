@@ -1,0 +1,22 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    background-image: url('/static/imagens/fundo.png');
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+img {
+    margin-top: 24px;
+}
+
+.paragraph{
+    margin-right: 100px
+    
+}
