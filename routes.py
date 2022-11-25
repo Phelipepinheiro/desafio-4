@@ -1,5 +1,7 @@
 
-
+from app import app
+from db import mysql
+from flask import render_template, request, url_for
 
 @app.route("/")
 @app.route("/index")
@@ -14,8 +16,8 @@ def quem_somos():
 @app.route("/contatos")
 def contatos():
     return render_template("contatos.html")
-
 '''
+
 
 
 @app.route('/contatos', methods=['GET', 'POST'])
@@ -47,4 +49,4 @@ def users():
         userDetails = cur.fetchall()
 
         return render_template("users.html", userDetails=userDetails)
-
+        
